@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            /* flex是块级元素，inline-flex是行内元素 */
+            display: flex;
+            width:550px;
+            height: 400px;
+            background: pink;
+            justify-content: flex-start;
+            align-items: baseline;
+            /* flex-wrap: wrap; */
+            align-content: flex-start;
+        }
+        .item{
+            width: 250px;
+            color: #fff;
+            text-align: center;
+           
+        }
+        /* 在子元素没有高度的情况下会被拉伸 */
+        .item1{
+            background-color: #f00;
+            height:100px;
+            flex-shrink: 1;
+        }
+        .item2{
+            background-color: #0f0;
+            height: 100px;
+            flex-shrink: 1;
+        }
+        .item3{
+            background-color: #00f;
+            height: 100px;
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+        <!-- <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div> -->
+    </div>
+    <strong>Strong元素</strong>
+</body>
+</html>
